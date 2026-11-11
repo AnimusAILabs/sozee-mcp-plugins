@@ -11,7 +11,7 @@ You need a Sozee account. [Sign up](https://app.sozee.ai/sign-up) if you don't h
 - Create an AI character, then update its look and backstory.
 - Make photos and photoshoots of your character, then edit, crop and upscale them.
 - Plan and render short-form video: UGC-style videos, ads, reel clones and photos brought to life.
-- Organise boards, your vault and your library of outfits, places and objects.
+- Organize boards, your vault and your library of outfits, places and objects.
 - Schedule posts to your connected social accounts and see how they did.
 - Research trends, viral posts and creators.
 - Check your plan, credits and prices.

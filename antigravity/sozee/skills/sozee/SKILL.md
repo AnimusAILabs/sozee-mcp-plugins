@@ -1,6 +1,6 @@
 ---
 name: sozee
-description: Work with a person's Sozee account through the Sozee MCP tools. Use when they ask to create or update an AI character, make photos, photoshoots or short videos of it, organise boards, vault or library items, schedule social posts and read results, research trends, or check their plan, credits and prices.
+description: Work with a person's Sozee account through the Sozee MCP tools. Use when they ask to create or update an AI character, make photos, photoshoots or short videos of it, organize boards, vault or library items, schedule social posts and read results, research trends, or check their plan, credits and prices.
 ---
 
 # Working with Sozee
