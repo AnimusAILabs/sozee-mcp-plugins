@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "sozee": {
+      "type": "http",
+      "url": "https://mcp.sozee.ai/mcp"
+    }
+  }
+}

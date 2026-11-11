@@ -1,0 +1,13 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "sozee",
+  "displayName": "Sozee",
+  "version": "0.1.0",
+  "description": "Make photos and video of your AI character, schedule posts and read results in a Sozee account.",
+  "author": "Sozee",
+  "suggestedPrompts": [
+    "What can I make with my Sozee plan and credits?",
+    "Make a photo of my character at a beach cafe",
+    "Which of my posts did best this month?"
+  ]
+}

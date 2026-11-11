@@ -1,0 +1,16 @@
+{
+  "name": "sozee",
+  "description": "Sozee for Claude Code: make photos and video of your AI character, schedule posts and read results.",
+  "owner": {
+    "name": "Sozee",
+    "email": "support@sozee.ai",
+    "url": "https://www.sozee.ai"
+  },
+  "plugins": [
+    {
+      "name": "sozee",
+      "source": "./plugins/sozee",
+      "description": "Make photos and video of your AI character, schedule posts and read results in a Sozee account."
+    }
+  ]
+}

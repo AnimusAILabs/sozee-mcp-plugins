@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.sozee/mcp",
+  "title": "Sozee",
+  "description": "Make photos and video of your AI character, schedule posts and read results in a Sozee account.",
+  "version": "0.1.0",
+  "websiteUrl": "https://www.sozee.ai/mcp",
+  "repository": {
+    "url": "https://github.com/AnimusAILabs/sozee-mcp-plugins",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sozee.ai/mcp"
+    }
+  ]
+}

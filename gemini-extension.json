@@ -1,0 +1,11 @@
+{
+  "name": "sozee",
+  "version": "0.1.0",
+  "description": "Make photos and video of your AI character, schedule posts and read results in a Sozee account.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "sozee": {
+      "httpUrl": "https://mcp.sozee.ai/mcp"
+    }
+  }
+}

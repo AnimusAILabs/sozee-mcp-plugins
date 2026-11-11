@@ -1,0 +1,151 @@
+{
+  "server": {
+    "name": "ai.sozee/mcp",
+    "url": "https://mcp.sozee.ai/mcp",
+    "version": "0.1.0"
+  },
+  "clients": [
+    {
+      "id": "claude",
+      "name": "Claude (web, desktop and mobile)",
+      "kind": "connector",
+      "steps": [
+        "Open Customize, then Connectors.",
+        "Select + Add, then Add custom connector.",
+        "Name it Sozee and paste the server URL: https://mcp.sozee.ai/mcp",
+        "Select Continue, keep the detected sign-in settings, then Add.",
+        "Connect and sign in to your Sozee account.",
+        "On Team and Enterprise plans an owner adds it under Organization settings, Connectors (Add, Custom, Web); members then select Connect."
+      ],
+      "source": "https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "kind": "connector",
+      "steps": [
+        "Go to chatgpt.com/plugins.",
+        "Select the plus button, then Add custom MCP server.",
+        "Name it Sozee and add a short description.",
+        "Under Connection choose Public endpoint and paste the server URL: https://mcp.sozee.ai/mcp",
+        "Choose OAuth for authentication, review the warning and continue.",
+        "Select Create as a plugin, then sign in to your Sozee account.",
+        "Your account or workspace settings decide whether custom MCP servers are allowed."
+      ],
+      "source": "https://developers.openai.com/apps-sdk/deploy/connect-chatgpt"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "kind": "config",
+      "config": "/plugin marketplace add AnimusAILabs/sozee-mcp-plugins\n/plugin install sozee@sozee",
+      "configLang": "text",
+      "steps": [
+        "Add the marketplace and install the plugin (commands above), or run: claude mcp add --transport http sozee https://mcp.sozee.ai/mcp",
+        "Run /mcp and sign in to Sozee."
+      ],
+      "source": "https://code.claude.com/docs/en/plugin-marketplaces"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "kind": "oneclick",
+      "link": "cursor://anysphere.cursor-deeplink/mcp/install?name=sozee&config=eyJ1cmwiOiJodHRwczovL21jcC5zb3plZS5haS9tY3AifQ==",
+      "config": "{\n  \"mcpServers\": {\n    \"sozee\": {\n      \"url\": \"https://mcp.sozee.ai/mcp\"\n    }\n  }\n}\n",
+      "configLang": "json",
+      "steps": [
+        "Open the link to install, or add the config to ~/.cursor/mcp.json (all projects) or .cursor/mcp.json (one project).",
+        "Sign in to Sozee when Cursor asks."
+      ],
+      "source": "https://cursor.com/docs/mcp/install-links"
+    },
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "kind": "oneclick",
+      "link": "vscode:mcp/install?%7B%22name%22%3A%22sozee%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.sozee.ai%2Fmcp%22%7D",
+      "webLink": "https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522sozee%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fmcp.sozee.ai%252Fmcp%2522%257D",
+      "config": "{\n  \"servers\": {\n    \"sozee\": {\n      \"type\": \"http\",\n      \"url\": \"https://mcp.sozee.ai/mcp\"\n    }\n  }\n}\n",
+      "configLang": "json",
+      "steps": [
+        "Open the link and select Install, or add the config to .vscode/mcp.json.",
+        "Sign in to Sozee when VS Code asks."
+      ],
+      "source": "https://code.visualstudio.com/api/extension-guides/ai/mcp"
+    },
+    {
+      "id": "vscode-insiders",
+      "name": "VS Code Insiders",
+      "kind": "oneclick",
+      "link": "vscode-insiders:mcp/install?%7B%22name%22%3A%22sozee%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.sozee.ai%2Fmcp%22%7D",
+      "webLink": "https://vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522sozee%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fmcp.sozee.ai%252Fmcp%2522%257D",
+      "config": "{\n  \"servers\": {\n    \"sozee\": {\n      \"type\": \"http\",\n      \"url\": \"https://mcp.sozee.ai/mcp\"\n    }\n  }\n}\n",
+      "configLang": "json",
+      "steps": [
+        "Open the link and select Install.",
+        "Sign in to Sozee when asked."
+      ],
+      "source": "https://code.visualstudio.com/api/extension-guides/ai/mcp"
+    },
+    {
+      "id": "codex",
+      "name": "Codex CLI",
+      "kind": "config",
+      "config": "[mcp_servers.sozee]\nurl = \"https://mcp.sozee.ai/mcp\"\n",
+      "configLang": "toml",
+      "steps": [
+        "Add this to ~/.codex/config.toml, or run: codex mcp add sozee --url https://mcp.sozee.ai/mcp",
+        "Run: codex mcp login sozee"
+      ],
+      "source": "https://learn.chatgpt.com/docs/extend/mcp?surface=cli"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "kind": "config",
+      "config": "gemini extensions install https://github.com/AnimusAILabs/sozee-mcp-plugins",
+      "configLang": "bash",
+      "steps": [
+        "Install the extension with the command above.",
+        "Sign in to Sozee when Gemini CLI asks."
+      ],
+      "source": "https://geminicli.com/docs/extensions/reference/"
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "kind": "config",
+      "config": "{\n  \"mcpServers\": {\n    \"sozee\": {\n      \"serverUrl\": \"https://mcp.sozee.ai/mcp\"\n    }\n  }\n}\n",
+      "configLang": "json",
+      "steps": [
+        "Add this to ~/.gemini/config/mcp_config.json (all projects) or .agents/mcp_config.json (one project), or install the plugin in antigravity/sozee from a clone of this repo with: agy plugin install ./antigravity/sozee",
+        "Authenticate Sozee under Customizations, Installed, MCP Servers."
+      ],
+      "source": "https://antigravity.google/docs/mcp"
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "kind": "config",
+      "config": "{\n  \"context_servers\": {\n    \"sozee\": {\n      \"url\": \"https://mcp.sozee.ai/mcp\"\n    }\n  }\n}\n",
+      "configLang": "json",
+      "steps": [
+        "Add this to your Zed settings.json.",
+        "Sign in to Sozee when Zed asks."
+      ],
+      "source": "https://zed.dev/docs/ai/mcp"
+    },
+    {
+      "id": "devin",
+      "name": "Devin Desktop and CLI",
+      "kind": "config",
+      "config": "{\n  \"mcpServers\": {\n    \"sozee\": {\n      \"url\": \"https://mcp.sozee.ai/mcp\",\n      \"transport\": \"http\"\n    }\n  }\n}\n",
+      "configLang": "json",
+      "steps": [
+        "Add this to ~/.config/devin/mcp_config.json (all projects) or .devin/mcp_config.json (one project).",
+        "Select Authenticate when Sozee shows Needs authentication."
+      ],
+      "source": "https://docs.devin.ai/cli/extensibility/mcp/configuration.md"
+    }
+  ]
+}

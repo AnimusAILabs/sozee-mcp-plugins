@@ -1,0 +1,17 @@
+{
+  "name": "sozee",
+  "displayName": "Sozee",
+  "version": "0.1.0",
+  "description": "Make photos and video of your AI character, schedule posts and read results in a Sozee account.",
+  "author": {
+    "name": "Sozee",
+    "email": "support@sozee.ai",
+    "url": "https://www.sozee.ai"
+  },
+  "homepage": "https://www.sozee.ai/mcp",
+  "repository": "https://github.com/AnimusAILabs/sozee-mcp-plugins",
+  "license": "MIT",
+  "keywords": ["sozee", "ai-character", "photos", "video", "social-media", "scheduling"],
+  "documentationUrl": "https://www.sozee.ai/mcp",
+  "supportUrl": "https://www.sozee.ai/guides"
+}
